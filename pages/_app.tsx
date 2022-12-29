@@ -7,7 +7,7 @@ import '../styles/globals.css'
 
 import { useEffect } from 'react';
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }:{Component:any,pageProps:any}) {
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap');
   }, []);
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport" 
           content="width=device-width, initial-scale=1" />
       </Head>
-      <Layout>
+      <Layout {...pageProps}>
         <Component {...pageProps} />
       </Layout>
     </>
