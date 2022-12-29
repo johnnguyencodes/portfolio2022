@@ -17,7 +17,7 @@ export default function Layout({children, props}:{children:any,props:any}) {
           <Image 
             width={375} 
             height={375}
-            src="https://github.com/johnnguyencodes/portfolio2022/blob/main/public/images/hero_image_5.png"
+            src="https://raw.githubusercontent.com/johnnguyencodes/portfolio2022/main/public/images/hero_image_5.png"
             alt="hero image" 
           />
           <Footer />
