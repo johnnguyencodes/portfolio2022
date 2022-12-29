@@ -1,3 +1,4 @@
+import { AppProps } from 'next/app';
 import Nav from './Nav';
 import Header from './Header';
 import Image from 'next/image'
@@ -5,11 +6,11 @@ import Footer from './Footer';
 
 import styles from '../styles/Layout.module.css'
 
-export default function Layout({children}) {
+export default function Layout({children, props}:{children:any,props:any}) {
   return (
     <>
       <div className={styles.container}>
-        <main className="page-width">
+        <main className="page-width" {...props}>
           <Nav />
           <Header />
           {children}
